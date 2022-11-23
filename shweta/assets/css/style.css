@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.div1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color:yellowgreen;
+    position: absolute;
+    /*annimation property*/
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: circle;
+}
+@keyframes circle{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        top: 0;
+        left: 400px;
+        background-image: linear-gradient(purple,darkblue);
+    }
+    50%{
+        top: 400px;
+        left: 400px;
+        background-image: linear-gradient( deeppink);
+    }
+    75%{
+        left: 0;
+        top: 400px;
+        background-image: linear-gradient( red, orange);
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+
+    
+}
+
